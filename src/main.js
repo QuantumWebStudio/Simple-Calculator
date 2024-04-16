@@ -6,5 +6,10 @@ display=document.getElementById('display')
     display.value="";
  }
  function Calculate(){
-    display.value=eval(display.value)
+    try{
+        display.value=eval(display.value)
+    }
+    catch(error){
+        display.value='ERROR'
+    }
  }
