@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="headingTag">Simple Calculator</h1>
+    <div id="content">
+      <div id="bor">
+        <div id="result">
+          <input type="text" readonly id="display" />
+          <button class="btn" onclick="ClearScreen()" id="clear">AC</button>
+        </div>
+        <div id="keys">
+          <button onclick="AppendTo(7)" id="keyvalue" class="btn">7</button>
+          <button onclick="AppendTo(8)" id="keyvalue" class="btn">8</button>
+          <button onclick="AppendTo(9)" id="keyvalue" class="btn">9</button>
+          <button onclick="AppendTo('*')" id="keyOperator" class="btn">
+            *
+          </button>
+          <button onclick="AppendTo(4)" id="keyvalue" class="btn">4</button>
+          <button onclick="AppendTo(5)" id="keyvalue" class="btn">5</button>
+          <button onclick="AppendTo(6)" id="keyvalue" class="btn">6</button>
+          <button onclick="AppendTo('/')" id="keyOperator" class="btn">
+            /
+          </button>
+          <button onclick="AppendTo(1)" id="keyvalue" class="btn">1</button>
+          <button onclick="AppendTo(2)" id="keyvalue" class="btn">2</button>
+          <button onclick="AppendTo(3)" id="keyvalue" class="btn">3</button>
+          <button onclick="AppendTo('-')" id="keyOperator" class="btn">
+            -
+          </button>
+          <button onclick="AppendTo(0)" id="keyvalue" class="btn">0</button>
+          <button onclick="AppendTo('.')" id="keyvalue" class="btn">.</button>
+          <button onclick="Calculate()" id="keyvalue" class="btn">=</button>
+          <button onclick="AppendTo('+')" id="keyOperator" class="btn">
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
