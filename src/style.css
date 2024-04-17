@@ -11,23 +11,23 @@ html.body{
     margin: 4%;
 }
 #content{
-    display: grid;
+    display:grid;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    background-color: #000;
+    color: #aaa;
+    margin: 0 auto;
+    max-width: 300px;
 }
 input[type="text"] {
     font-size: 22px;
     width: 160px;
     border: transparent;
     float: right;
-    text-align: right;
+    text-align: right;    
   }
-#bor{
-    width: 300px;
-    border-radius: 10px;
-    background-color: #000;
-    color: #aaa;
-}
+
 #display{
     background-color: black;
     color: white;
@@ -37,14 +37,18 @@ input[type="text"] {
     padding: 20px;
     overflow: hidden;
 }
+#result{
+    width: 300px;
+}
 #keys{
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(4,1fr);   
     width: 300px;
     border-top: 2px solid grey;
     
 }
-
 .btn{
     height: 50px;
     width: 50px;
